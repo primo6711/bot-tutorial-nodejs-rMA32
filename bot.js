@@ -82,7 +82,7 @@ function respond() {
   
   else if(request.text && botRegexOW.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("50yrd line going in at 4th and 5 or less… if you are losing by 9 or more in the 3rd,  or if you are losing in the 4th, you can go for it at anytime/anywhere... also if tied or you are up 8 points or less with 3 minutes or less and you are trying to seal the game you are allowed to go if it 4th and 5 or less/");
+    postMessage("50yrd line going in at 4th and 5 or less… if you are losing by 9 or more in the 3rd,  or if you are losing in the 4th, you can go for it at anytime/anywhere... also if tied or you are up 8 points or less with 3 minutes or less and you are trying to seal the game you are allowed to go if it 4th and 5 or less");
     this.res.end();
   } 
   else if(request.text && botRegexSalt.test(request.text)) {
@@ -97,7 +97,7 @@ function respond() {
   }
   else if(request.text && botRegexRules.test(request.text)) {
     this.res.writeHead(200);
-    postMessage("https://docs.google.com/document/d/1hSuEG7oplnx4IX6HGsMOjsWb9TCqC4-F1NLjuBz5PCM/edit");
+    postMessage("http://daddyleagues.com/RFTR/rules");
     this.res.end();
   } 
   else if(request.text && botRegexGTA.test(request.text)) {
